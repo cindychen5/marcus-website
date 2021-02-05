@@ -1,4 +1,52 @@
-img {
+#banner {
+    background-image: url("../documentation/woodwork.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#line {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid white;
+}
+
+.pictures > img {
     height: 250px;
-    width: 201px;
+    width: 250px;
+    border-radius: 5% 5%;
+}
+
+
+#marcus-photo {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.captions {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel {
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+#right-column {
+    max-height: 500px;
+}
+
+#gallery-row{
+    margin: 15px;
+}
+
+.each-pic {
+    margin-bottom: 15px;
 }
