@@ -1,3 +1,7 @@
+head, body, footer {
+    background-color: #EACCA4;
+}
+
 #banner {
     background-image: url("woodwork.jpg");
     height: 400px;
@@ -45,8 +49,15 @@
 
 #gallery-row{
     margin: 15px;
+    /*max-height: 250px;*/
 }
 
 .each-pic {
     margin-bottom: 15px;
+    border: 5px ridge #237539;
+}
+
+
+.icons {
+    color: #237539;
 }
