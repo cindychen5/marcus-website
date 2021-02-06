@@ -1,13 +1,30 @@
 head, body, footer {
-    background-color: #EACCA4;
+    background-color: #C99551;
+    font-family: Helvetica, sans-serif;
 }
 
 #banner {
     background-image: url("woodwork.jpg");
-    height: 400px;
+    /*height: 400px;*/
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    color: #42A43F;
+}
+
+#center-everything {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#words {
+    color: #ffffff;
+}
+
+#hi, .lead {
+    font-family: Verdana, sans-serif;
 }
 
 #line {
