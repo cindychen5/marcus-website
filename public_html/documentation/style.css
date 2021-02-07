@@ -5,18 +5,20 @@ head, body, footer {
 
 #banner {
     background-image: url("woodwork.jpg");
-    /*height: 400px;*/
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+ }
+
+.green {
     color: #42A43F;
 }
 
-#center-everything {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.mask {
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 
 #words {
@@ -60,7 +62,7 @@ head, body, footer {
     bottom: -40px;
 }
 
-#right-column {
+.reviews {
     max-height: 500px;
 }
 
