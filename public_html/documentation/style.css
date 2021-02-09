@@ -4,21 +4,23 @@ head, body, footer {
 }
 
 #banner {
-    background-image: url("woodwork.jpg");
+    background-image: url("pictures/woodwork.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    position: relative;
  }
 
 .green {
     color: #42A43F;
+    font-weight: 500;
 }
 
 .mask {
-    position: absolute;
-    top: 25%;
-    left: 25%;
+    position: relative;
+    text-align: center;
+    top: 40%
 }
 
 #words {
@@ -30,10 +32,11 @@ head, body, footer {
 }
 
 #line {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-top: -0.6rem;
+    margin-bottom: 0.8rem;
     border: 0;
-    border-top: 2px solid white;
+    border-top: 3px solid white;
+    max-width: 560px;
 }
 
 .pictures > img {
