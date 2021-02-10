@@ -50,7 +50,7 @@
             </div>
 <!--            About me column-->
             <div class="col-lg-9 col-md-8 col-sm-12 pl-lg-5 px-sm-0 my-2">
-                <h3 id="hi" class="">About me:</h3>
+                <h3 id="hi"><span id="bold">About me:</span></h3>
                 <p class="lead ">I am a native New Mexican born and raised here in Albuquerque.
                     Growing up, I spent a lot of my time with both my grandfathers, which helped foster my love for art.
                     On my mother's side, my grandfather had his own contracting company and built homes in the greater
@@ -71,21 +71,21 @@
     <div id="gallery-row" class="row">
         <a href="pictures/brush-stand-brush.jpeg" data-toggle="lightbox" data-gallery="gallery"
            class="col-md-4 ">
-            <img src="pictures/brush-stand-brush.jpeg" class="img-fluid rounded shadow-lg each-pic" alt="brushstand">
+            <img src="pictures/brush-stand-brush.jpeg" class="img-fluid rounded each-pic" alt="brushstand">
         </a>
-        <a href="pictures/shaving-brush-stand.jpeg" data-toggle="lightbox" data-gallery="gallery"
-           class="col-md-4">
-            <img src="pictures/shaving-brush-stand.jpeg" class="img-fluid rounded shadow-lg each-pic" alt="shavingbrush">
-        </a>
-        <a href="pictures/straightrazorstand.jpeg" data-toggle="lightbox" data-gallery="gallery"
+                <a href="pictures/straightrazorstand.jpg" data-toggle="lightbox" data-gallery="gallery"
            class="col-md-4 ">
-            <img src="pictures/straightrazorstand.jpeg" class="img-fluid rounded shadow-lg each-pic" alt="straightrazor">
+            <img src="pictures/straightrazorstand.jpg" class="img-fluid rounded each-pic" alt="straightrazor">
+        </a>
+        <a href="pictures/top-view.jpg" data-toggle="lightbox" data-gallery="gallery"
+           class="col-md-4">
+            <img src="pictures/top-view.jpg" class="img-fluid rounded each-pic" alt="topview">
         </a>
     </div>
     <div id="gallery-row" class="row">
-        <a href="pictures/coasters.jpeg" data-toggle="lightbox" data-gallery="gallery"
+        <a href="pictures/landscape2.jpg" data-toggle="lightbox" data-gallery="gallery"
            class="col-md-4">
-            <img src="pictures/coasters.jpeg" class="img-fluid rounded each-pic" alt="coasters">
+            <img src="pictures/landscape2.jpg" class="img-fluid rounded each-pic" alt="landscape">
         </a>
         <a href="pictures/espresso-coaster.jpg" data-toggle="lightbox" data-gallery="gallery"
            class="col-md-4 ">
@@ -95,20 +95,20 @@
            class="col-md-4 ">
             <img src="pictures/espresso-coaster.jpg" class="img-fluid rounded each-pic" alt="espressocoaster">
         </a>
-        <div id="gallery-row" class="row">
-            <a href="pictures/landscape.jpeg" data-toggle="lightbox" data-gallery="gallery"
+    </div>
+    <div id="gallery-row" class="row">
+            <a href="pictures/neu-diploma.jpg" data-toggle="lightbox" data-gallery="gallery"
                class="col-md-4">
-                <img src="pictures/landscape.jpeg" class="img-fluid rounded  each-pic" alt="landscape">
+                <img src="pictures/neu-diploma.jpg" class="img-fluid rounded each-pic" alt="neudiploma">
             </a>
-            <a href="pictures/diploma-frames.jpg" data-toggle="lightbox" data-gallery="gallery"
-               class="col-md-4 ">
-                <img src="pictures/diploma-frames.jpg" class="img-fluid rounded each-pic" alt="diploma">
+            <a href="pictures/new-frame.jpg" data-toggle="lightbox" data-gallery="gallery"
+               class="col-md-4">
+                <img src="pictures/new-frame.jpg" class="img-fluid rounded each-pic" alt="newframe">
             </a>
             <a href="pictures/frame.jpeg" data-toggle="lightbox" data-gallery="gallery"
                class="col-md-4 ">
                 <img src="pictures/frame.jpeg" class="img-fluid rounded each-pic" alt="frame">
             </a>
-        </div>
     </div>
 </div>
 
@@ -170,7 +170,7 @@
             <!--Testimonial Grid column-->
             <div id="right-column" class="col-md-5 ">
                 <div class="container">
-                    <h3 class="mb-3 row"><strong>Testimonials</strong></h3>
+                    <h3 class="mb-3 row"><span id="bold">Testimonials</span></h3>
                     <div class="reviews row overflow-auto ">
                         <p>Marcus is one of the best wood workers I've worked with. He always create quality work.</p>
 
@@ -213,81 +213,88 @@
 </section>
 <!--Behind the Scenes/Testimonial-->
 
-
-<!-- Contact Form -->
+<!--Contact Form-->
 <div class="container">
-    <div class="row">
-        <div id="formheight" class="col-lg-8 mx-3 mb-3">
-            <h3>Contact form</h3>
-            <form id="contact-form" action="php/mailer.php" method="post" novalidate="novalidate">
-<!--                name line-->
-                <div class="form-group">
-                  <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+        <h3 class="ml-5 mb-3">
+            <span id="bold">Contact</span>
+        </h3>
+        <form id="contact-form" action="php/mailer.php" method="post" novalidate="novalidate">
+            <!--                name line-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                </div>
-<!--                email address-->
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+                        <!--                email address-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Email">
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Your Email">
-                    </div>
-                </div>
 
-<!--                phone number-->
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>
+                        <!--                phone number-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Number">
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Your Number">
                     </div>
-                </div>
-<!--                message box-->
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-comment fa-fw" aria-hidden="true"></i>
-                        </div>
-                        <textarea class="form-control" rows="3"
-                                  placeholder="What can I make for you?"></textarea>
-                    </div>
-                </div>
 
-                <!-- reCAPTCHA -->
-                <div class="g-recaptcha ml-4" data-sitekey="6Len6C4UAAAAALlI_mfpckSkYBVIoGBToYG9B2W6">
-                    <div style="width: 304px; height: 78px;">
-                        <div>
-                            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Len6C4UAAAAALlI_mfpckSkYBVIoGBToYG9B2W6&amp;co=aHR0cHM6Ly9jdXN0b21kZXB0LmNvbTo0NDM.&amp;hl=en&amp;v=_KUxfxvAoJ4k7SaKyLbja4Mi&amp;size=normal&amp;cb=vlmwzci86qmz"
-                                    width="305" height="78" role="presentation" name="a-eyxe4awkgfp3" frameborder="0"
-                                    scrolling="no"
-                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                    <div class="col-lg-6">
+                        <!--                message box-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+                                </div>
+                                <textarea class="form-control" rows="5"
+                                          placeholder="What can I make for you?"></textarea>
+                            </div>
                         </div>
-                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0; resize: none; display: none;"></textarea>
-                    </div>
-                    <iframe style="display: none;"></iframe>
-                </div>
-                <!--empty area for form error/success output-->
-                <div class="row mt-2" id="">
-                    <div class="col-xs-12">
-                        <div id="output-area"></div>
                     </div>
                 </div>
-<div class="send">
+            </div>
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha mb-3 row justify-content-center" data-sitekey="6Len6C4UAAAAALlI_mfpckSkYBVIoGBToYG9B2W6">
+                <div style="width: 304px; height: 78px;">
+                    <div>
+                        <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Len6C4UAAAAALlI_mfpckSkYBVIoGBToYG9B2W6&amp;co=aHR0cHM6Ly9jdXN0b21kZXB0LmNvbTo0NDM.&amp;hl=en&amp;v=_KUxfxvAoJ4k7SaKyLbja4Mi&amp;size=normal&amp;cb=vlmwzci86qmz"
+                                width="310" height="78" role="presentation" name="a-eyxe4awkgfp3" frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                    </div>
+                    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                              style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0; resize: none; display: none;"></textarea>
+                </div>
+                <iframe style="display: none;"></iframe>
+            </div>
+            <!--empty area for form error/success output-->
+            <div class="row mt-2">
+                <div class="col-xs-12">
+                    <div id="output-area"></div>
+                </div>
+            </div>
 
-                <button type="submit" class="btn btn-primary ml-4">
-                    Send</button>
-</div>
-            </form>
-        </div>
+            <div class="send row justify-content-center">
+                <button type="submit" class="btn btn-success mb-5 ">
+                    Send Message
+                </button>
+            </div>
+        </form>
     </div>
-</div>
+
 
 <!--my info-->
 <footer>
