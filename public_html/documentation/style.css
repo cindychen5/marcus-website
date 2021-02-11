@@ -23,7 +23,7 @@ head, body, footer {
     top: 40%
 }
 
-#bold {
+span {
     font-weight: bold;
 }
 
