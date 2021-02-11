@@ -43,13 +43,6 @@ span {
     max-width: 560px;
 }
 
-.pictures > img {
-    height: 250px;
-    width: 250px;
-    border-radius: 5% 5%;
-}
-
-
 #marcus-photo {
     border-radius: 20px;
     width: 300px;
