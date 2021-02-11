@@ -69,11 +69,13 @@ span {
 }
 
 .gallery-row{
-    margin: 15px;
+    margin:auto;
+
 }
 
 .each-pic {
-    margin-bottom: 15px;
+    margin-bottom:15px;
+    margin-top:15px;
     border: 5px ridge #237539;
 }
 
