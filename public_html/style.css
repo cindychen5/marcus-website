@@ -1,0 +1,84 @@
+head, body, footer {
+    background-color: #C99551;
+    font-family: Helvetica, sans-serif;
+}
+
+#banner {
+    background-image: url("pictures/woodwork.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+ }
+
+.green {
+    color: #42A43F;
+    font-weight: 500;
+}
+
+.mask {
+    position: relative;
+    text-align: center;
+    top: 40%
+}
+
+span {
+    font-weight: bold;
+}
+
+#words {
+    color: #ffffff;
+}
+
+#hi, .lead {
+    font-family: Verdana, sans-serif;
+}
+
+#line {
+    margin-top: -0.6rem;
+    margin-bottom: 0.8rem;
+    border: 0;
+    border-top: 3px solid white;
+    max-width: 560px;
+}
+
+.pictures > img {
+    height: 250px;
+    width: 250px;
+    border-radius: 5% 5%;
+}
+
+
+#marcus-photo {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.carousel {
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.reviews {
+    max-height: 500px;
+}
+
+.gallery-row{
+    margin:auto;
+
+}
+
+.each-pic {
+    margin-bottom:15px;
+    margin-top:15px;
+    border: 5px ridge #237539;
+}
+
+.icons {
+    color: #237539;
+}
