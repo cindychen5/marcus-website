@@ -4,22 +4,9 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 });
 
 $(document).ready(function(){
-
-    /**
-     * jQuery Validate Function
-     *
-     * This function provides front-end validation for your form.
-     * If all tests set up here pass, the form data is AJAX submitted
-     * to the mailer.php file.
-     *
-     * Update this file as needed for your form.
-     * All ids and name values must match up to your form here.
-     *
-     * @author Rochelle Lewis <rlewis37@cnm.edu>
-     **/
-
+    document.getElementById("contact-form")
     /* begin validate function here */
-    $("#demo-form").validate({
+    $("#contact-form").validate({
 
         // setup handling of form errors
         debug: true,
@@ -30,14 +17,14 @@ $(document).ready(function(){
         // rules here define what is good or bad input
         // each rule starts with the form input element's NAME attribute
         rules: {
-            demoName: {
+            name: {
                 required: true
             },
-            demoEmail: {
+            email: {
                 email: true,
                 required: true
             },
-            demoMessage: {
+            message: {
                 required: true,
                 maxlength: 2000
             }
@@ -45,40 +32,40 @@ $(document).ready(function(){
 
         // error messages to display to the end user when rules above don't pass
         messages: {
-            demoName: {
-                required: "Y U have no name?"
+            name: {
+                required: "Please enter a name."
             },
-            demoEmail: {
+            email: {
                 email: "Please enter a valid email address.",
                 required: "Please enter a valid email address."
             },
-            demoMessage: {
+            message: {
                 required: "Please enter a message.",
                 maxlength: "2000 characters max."
             }
         },
 
         // AJAX submit the form data to back end if rules pass
-        submitHandler: function(form) {
-            $("#demo-form").ajaxSubmit({
+        submitHandler: (form) => {
+            $("#contact-form").ajaxSubmit({
                 type: "POST",
-                url: $("#demo-form").attr("action"),
+                url: $("#contact-form").attr("action"),
 
-                success: function(ajaxOutput) {
+                success: (ajaxOutput) => {
                     // clear the output area's formatting
-                    $("#output-area").css("display", "");
+                    $("#output-area").css("display", "")
 
                     // write the server's reply to the output area
-                    $("#output-area").html(ajaxOutput);
+                    $("#output-area").html(ajaxOutput)
 
                     // reset the form if it was successful
-                    if($(".alert-success").length >= 1) {
-                        $("#demo-form")[0].reset();
+                    if($(".alert-success" >= 1)) {
+                        $("#contact-form")[0].reset()
                     }
                 }
             })
         }
 
-    });/* end validate function here */
+    })/* end validate function here */
 
-});/*end document.ready()*/
+})/*end document.ready()*/
