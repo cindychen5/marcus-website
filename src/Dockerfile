@@ -4,11 +4,10 @@ ENV NODE_ENV $NODE_ENV
 ARG PORT=4200
 ENV PORT $PORT
 EXPOSE $PORT 9229 9230
-RUN npm i npm@latest -g
 RUN mkdir /home/node/app
 WORKDIR ./home/node/app
 RUN chown node:node ./
 USER node
 COPY package.json package-lock.json index.js ./
 RUN npm install --no-optional && npm cache clean --force
-CMD ("npm", "run", "dev")
+CMD ["npm", "run", "dev"]
