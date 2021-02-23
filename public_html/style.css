@@ -76,3 +76,7 @@ span {
     font-size: 1em;
     font-family: Verdana, sans-serif;
 }
+
+textarea.form-control {
+    height: 146px;
+}
